@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+   smtp2api:
+    build: .
+    restart: always
+    environment:
+      - "SS2A_APIKEY=SuperSecretKey"
+    ports:
+      - "25:2525"
+      - "5000"
